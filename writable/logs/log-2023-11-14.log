@@ -1,0 +1,81 @@
+INFO - 2023-11-14 16:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-14 16:05:33 --> Invalid file: "usuario/login.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/login.php')
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('usuario/login', [], true)
+ 3 APPPATH/Controllers/UserController.php(15): view('usuario/login')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-14 16:05:47 --> Invalid file: "usuario/login.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/login.php')
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('usuario/login', [], true)
+ 3 APPPATH/Controllers/UserController.php(15): view('usuario/login')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-14 16:13:43 --> Call to a member function like() on null
+in APPPATH/Controllers/UserController.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-14 16:18:45 --> Undefined array key "pass"
+in APPPATH/Controllers/UserController.php on line 31.
+ 1 APPPATH/Controllers/UserController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pass"', '/Users/reusrs/Documents/AvProyecto/app/Controllers/UserController.php', 31)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-14 16:19:02 --> Call to a member function like() on null
+in APPPATH/Controllers/UserController.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-14 16:22:25 --> Call to a member function like() on null
+in APPPATH/Controllers/UserController.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-14 16:45:55 --> Call to a member function like() on null
+in APPPATH/Controllers/UserController.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+INFO - 2023-11-14 16:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-14 16:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-14 16:49:32 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Estudiante.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Estudiante->agregar()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+INFO - 2023-11-14 16:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-14 16:52:01 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Estudiante.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Estudiante->agregar()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-14 16:54:55 --> Call to a member function like() on null
+in APPPATH/Controllers/UserController.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')

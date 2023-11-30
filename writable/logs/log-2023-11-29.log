@@ -1,0 +1,241 @@
+ERROR - 2023-11-29 02:23:22 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/reusrs/Documents/AvProyecto/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/reusrs/Documents/AvProyecto/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'reusrs', Object(SensitiveParameterValue), 'proyecto', 3306, '', 0)
+#1 /Users/reusrs/Documents/AvProyecto/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/reusrs/Documents/AvProyecto/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/reusrs/Documents/AvProyecto/app/Controllers/Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT Estudian...')
+#4 /Users/reusrs/Documents/AvProyecto/system/CodeIgniter.php(919): App\Controllers\Home->index()
+#5 /Users/reusrs/Documents/AvProyecto/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /Users/reusrs/Documents/AvProyecto/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/reusrs/Documents/AvProyecto/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#8 /Users/reusrs/Documents/AvProyecto/system/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/D...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/reusrs/Documents/AvProyecto/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/reusrs/Documents/AvProyecto/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/reusrs/Documents/AvProyecto/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/reusrs/Documents/AvProyecto/app/Controllers/Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT Estudian...')
+#3 /Users/reusrs/Documents/AvProyecto/system/CodeIgniter.php(919): App\Controllers\Home->index()
+#4 /Users/reusrs/Documents/AvProyecto/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/reusrs/Documents/AvProyecto/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/reusrs/Documents/AvProyecto/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#7 /Users/reusrs/Documents/AvProyecto/system/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/D...')
+#8 {main}
+CRITICAL - 2023-11-29 02:23:22 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT Estudiante.*, Grupos.grupo, Grados.grado FROM Estudiante, Grados, Grupos where Estudiante.idGrado = Grados.idGrado and Estudiante.idGrupo = Grupos.idGrupo')
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Home->index()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+INFO - 2023-11-29 02:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 02:36:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 02:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 02:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 02:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 02:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 02:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 02:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 02:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 02:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 02:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 02:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 02:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 02:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 02:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 02:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 02:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-29 19:29:48 --> Undefined property: stdClass::$nombre
+in APPPATH/Views/curso/mostrar.php on line 18.
+ 1 APPPATH/Views/curso/mostrar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombre', '/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php', 18)
+ 2 SYSTEMPATH/View/View.php(226): include('/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('curso/mostrar', [], true)
+ 5 APPPATH/Controllers/Curso.php(65): view('curso/mostrar')
+ 6 APPPATH/Controllers/Curso.php(13): App\Controllers\Curso->mostrar(null)
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Curso->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curso))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-29 19:31:56 --> Undefined property: stdClass::$nombre
+in APPPATH/Views/curso/mostrar.php on line 18.
+ 1 APPPATH/Views/curso/mostrar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombre', '/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php', 18)
+ 2 SYSTEMPATH/View/View.php(226): include('/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('curso/mostrar', [], true)
+ 5 APPPATH/Controllers/Curso.php(65): view('curso/mostrar')
+ 6 APPPATH/Controllers/Curso.php(13): App\Controllers\Curso->mostrar(null)
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Curso->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curso))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-29 19:31:57 --> Undefined property: stdClass::$nombre
+in APPPATH/Views/curso/mostrar.php on line 18.
+ 1 APPPATH/Views/curso/mostrar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombre', '/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php', 18)
+ 2 SYSTEMPATH/View/View.php(226): include('/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('curso/mostrar', [], true)
+ 5 APPPATH/Controllers/Curso.php(65): view('curso/mostrar')
+ 6 APPPATH/Controllers/Curso.php(13): App\Controllers\Curso->mostrar(null)
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Curso->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curso))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+INFO - 2023-11-29 19:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-29 19:32:11 --> Undefined property: stdClass::$nombre
+in APPPATH/Views/curso/mostrar.php on line 18.
+ 1 APPPATH/Views/curso/mostrar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombre', '/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php', 18)
+ 2 SYSTEMPATH/View/View.php(226): include('/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('curso/mostrar', [], true)
+ 5 APPPATH/Controllers/Curso.php(65): view('curso/mostrar')
+ 6 APPPATH/Controllers/Curso.php(13): App\Controllers\Curso->mostrar(null)
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Curso->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curso))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-29 19:32:24 --> Undefined property: stdClass::$id
+in APPPATH/Views/curso/mostrar.php on line 21.
+ 1 APPPATH/Views/curso/mostrar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', '/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php', 21)
+ 2 SYSTEMPATH/View/View.php(226): include('/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('curso/mostrar', [], true)
+ 5 APPPATH/Controllers/Curso.php(65): view('curso/mostrar')
+ 6 APPPATH/Controllers/Curso.php(13): App\Controllers\Curso->mostrar(null)
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Curso->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curso))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-29 19:33:00 --> Undefined property: stdClass::$id
+in APPPATH/Views/curso/mostrar.php on line 21.
+ 1 APPPATH/Views/curso/mostrar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', '/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php', 21)
+ 2 SYSTEMPATH/View/View.php(226): include('/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('curso/mostrar', [], true)
+ 5 APPPATH/Controllers/Curso.php(65): view('curso/mostrar')
+ 6 APPPATH/Controllers/Curso.php(13): App\Controllers\Curso->mostrar(null)
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Curso->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curso))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-29 19:33:02 --> Undefined property: stdClass::$id
+in APPPATH/Views/curso/mostrar.php on line 21.
+ 1 APPPATH/Views/curso/mostrar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', '/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php', 21)
+ 2 SYSTEMPATH/View/View.php(226): include('/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('curso/mostrar', [], true)
+ 5 APPPATH/Controllers/Curso.php(65): view('curso/mostrar')
+ 6 APPPATH/Controllers/Curso.php(13): App\Controllers\Curso->mostrar(null)
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Curso->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curso))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-29 19:33:09 --> Undefined property: stdClass::$id
+in APPPATH/Views/curso/mostrar.php on line 21.
+ 1 APPPATH/Views/curso/mostrar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', '/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php', 21)
+ 2 SYSTEMPATH/View/View.php(226): include('/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('curso/mostrar', [], true)
+ 5 APPPATH/Controllers/Curso.php(65): view('curso/mostrar')
+ 6 APPPATH/Controllers/Curso.php(13): App\Controllers\Curso->mostrar(null)
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Curso->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curso))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-29 19:33:16 --> Undefined property: stdClass::$id
+in APPPATH/Views/curso/mostrar.php on line 21.
+ 1 APPPATH/Views/curso/mostrar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', '/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php', 21)
+ 2 SYSTEMPATH/View/View.php(226): include('/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('curso/mostrar', [], true)
+ 5 APPPATH/Controllers/Curso.php(65): view('curso/mostrar')
+ 6 APPPATH/Controllers/Curso.php(13): App\Controllers\Curso->mostrar(null)
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Curso->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curso))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-29 19:33:17 --> Undefined property: stdClass::$id
+in APPPATH/Views/curso/mostrar.php on line 21.
+ 1 APPPATH/Views/curso/mostrar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', '/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php', 21)
+ 2 SYSTEMPATH/View/View.php(226): include('/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('curso/mostrar', [], true)
+ 5 APPPATH/Controllers/Curso.php(65): view('curso/mostrar')
+ 6 APPPATH/Controllers/Curso.php(13): App\Controllers\Curso->mostrar(null)
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Curso->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curso))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-29 19:33:43 --> Undefined property: stdClass::$id
+in APPPATH/Views/curso/mostrar.php on line 21.
+ 1 APPPATH/Views/curso/mostrar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', '/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php', 21)
+ 2 SYSTEMPATH/View/View.php(226): include('/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('curso/mostrar', [], true)
+ 5 APPPATH/Controllers/Curso.php(65): view('curso/mostrar')
+ 6 APPPATH/Controllers/Curso.php(13): App\Controllers\Curso->mostrar(null)
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Curso->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curso))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+CRITICAL - 2023-11-29 19:33:50 --> Undefined property: stdClass::$id
+in APPPATH/Views/curso/mostrar.php on line 64.
+ 1 APPPATH/Views/curso/mostrar.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', '/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php', 64)
+ 2 SYSTEMPATH/View/View.php(226): include('/Users/reusrs/Documents/AvProyecto/app/Views/curso/mostrar.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('curso/mostrar', [], true)
+ 5 APPPATH/Controllers/Curso.php(65): view('curso/mostrar')
+ 6 APPPATH/Controllers/Curso.php(13): App\Controllers\Curso->mostrar(null)
+ 7 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Curso->index()
+ 8 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curso))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/reusrs/Documents/AvProyecto/public/index.php')
+INFO - 2023-11-29 19:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:49:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 19:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 20:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 20:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 20:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-29 20:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
